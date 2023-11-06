@@ -1,0 +1,40 @@
+
+### non existing user
+
+POST {{https-host}}/{{prefix}}/{{v1}}/auth/custom_cookie_session HTTP/1.1
+content-type: application/json
+
+{
+    "userName": "api-1",
+    "password": "welcome@123"
+}
+
+### non existing user
+
+POST {{https-host}}/{{prefix}}/{{v1}}/auth/lib_cookie_session HTTP/1.1
+content-type: application/json
+
+{
+    "userName": "api-1",
+    "password": "welcome@123"
+}
+
+### existing user for custom session
+
+POST {{https-host}}/{{prefix}}/{{v1}}/auth/custom_cookie_session HTTP/1.1
+content-type: application/json
+
+{
+    "userName": "catslover",
+    "password": "catslover@123"
+}
+
+### existing user for lib session
+
+POST {{https-host}}/{{prefix}}/{{v1}}/auth/lib_cookie_session HTTP/1.1
+content-type: application/json
+
+{
+    "userName": "catslover",
+    "password": "catslover@123"
+}

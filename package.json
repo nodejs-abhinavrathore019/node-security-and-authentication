@@ -1,0 +1,39 @@
+{
+  "name": "node-security-and-authentication",
+  "version": "1.0.0",
+  "description": "implementation of various security and authentication mechanisms in nodejs",
+  "main": "dist/app.js",
+  "scripts": {
+    "install-1": "npm install --prefix 1-ssl-tls",
+    "install-2": "npm install --prefix 2-api-keys",
+    "install-3": "npm install --prefix 3-jwt",
+    "install-4": "npm install --prefix 4-oauth",
+    "install-5": "npm install --prefix 5-session",
+    "install-6": "npm install --prefix 6-cookies",
+    "install-all": "npm run install-1 && npm run install-2 && npm run install-3 && npm run install-4 && npm run install-5  && npm run install-6",
+    "dev-1": "npm run dev --prefix 1-ssl-tls",
+    "dev-2": "npm run dev --prefix 2-api-keys",
+    "dev-3": "npm run dev --prefix 3-jwt",
+    "dev-4": "npm run dev --prefix 4-oauth",
+    "dev-5": "npm run dev --prefix 5-session",
+    "dev-6": "npm run dev --prefix 6-cookies",
+    "prod-1": "npm run prod --prefix 1-ssl-tls",
+    "prod-2": "npm run prod --prefix 2-api-keys",
+    "prod-3": "npm run prod --prefix 3-jwt",
+    "prod-4": "npm run prod --prefix 4-oauth",
+    "prod-5": "npm run prod --prefix 5-session",
+    "prod-6": "npm run prod --prefix 6-cookies"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "express",
+    "nodejs"
+  ],
+  "author": "deltacap019",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}

@@ -1,0 +1,11 @@
+
+### without api-key
+PATCH {{http-host}}/{{prefix}}/{{v1}}/api-keys/revoke HTTP/1.1
+
+### with non-existent key
+PATCH {{http-host}}/{{prefix}}/{{v1}}/api-keys/revoke HTTP/1.1
+X-API-KEY: api_key
+
+### with valid api-key
+PATCH {{http-host}}/{{prefix}}/{{v1}}/api-keys/revoke HTTP/1.1
+X-API-KEY: $2b$10$YzIlwZ0RpiDcKdSQNSTc4uMciyLzb/J/cIJDTFclwWzV5j9JWCohO

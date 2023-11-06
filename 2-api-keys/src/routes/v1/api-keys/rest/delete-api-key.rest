@@ -1,0 +1,11 @@
+
+### without api-key
+DELETE {{http-host}}/{{prefix}}/{{v1}}/api-keys HTTP/1.1
+
+### with non-existent key
+DELETE {{http-host}}/{{prefix}}/{{v1}}/api-keys HTTP/1.1
+X-API-KEY: api_key
+
+### with valid api-key
+DELETE {{http-host}}/{{prefix}}/{{v1}}/api-keys HTTP/1.1
+X-API-KEY: $2b$10$sTUv3Se7NN30UIrGZbnFNed8ss6Lxb6mHuXG6i16rV0JCcYXw4XYm

@@ -1,0 +1,36 @@
+
+### non existing user
+POST {{http-host}}/{{prefix}}/{{v1}}/auth/custom_token HTTP/1.1
+content-type: application/json
+
+{
+    "userName": "api-1",
+    "password": "welcome@123"
+}
+
+### non existing user
+POST {{http-host}}/{{prefix}}/{{v1}}/auth/lib_token HTTP/1.1
+content-type: application/json
+
+{
+    "userName": "api-1",
+    "password": "welcome@123"
+}
+
+### existing user for custom token
+POST {{http-host}}/{{prefix}}/{{v1}}/auth/custom_token HTTP/1.1
+content-type: application/json
+
+{
+    "userName": "catslover",
+    "password": "catslover@123"
+}
+
+### existing user for lib token
+POST {{http-host}}/{{prefix}}/{{v1}}/auth/lib_token HTTP/1.1
+content-type: application/json
+
+{
+    "userName": "catslover",
+    "password": "catslover@123"
+}

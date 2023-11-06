@@ -1,0 +1,19 @@
+
+### without token
+GET {{http-host}}/{{prefix}}/{{v1}}/cats HTTP/1.1
+
+### with invalid token format
+GET {{http-host}}/{{prefix}}/{{v1}}/cats HTTP/1.1
+Authorization: Bearer token
+
+### with invalid token
+GET {{http-host}}/{{prefix}}/{{v1}}/cats HTTP/1.1
+Authorization: Bearer to.ke.n
+
+### with custom token
+GET {{http-host}}/{{prefix}}/{{v1}}/cats HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3YzM1YWUwMi1lMzE2LTQzNWEtYjcwMC1jNjk3MTU3OWIyODIiLCJuYW1lIjoiY2F0c2xvdmVyIiwiaWF0IjoxNjk4Njk5MjQwfQ.-UuVVQso7NJ9ZkWL2y2Y5uW8t48g9r1qHyRXzBCEPJU
+
+### with lib token
+GET {{http-host}}/{{prefix}}/{{v1}}/cats HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3YzM1YWUwMi1lMzE2LTQzNWEtYjcwMC1jNjk3MTU3OWIyODIiLCJuYW1lIjoiY2F0c2xvdmVyIiwiaWF0IjoxNjk4Njk5MjQwfQ.-UuVVQso7NJ9ZkWL2y2Y5uW8t48g9r1qHyRXzBCEPJU

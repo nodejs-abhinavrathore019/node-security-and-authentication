@@ -1,0 +1,7 @@
+
+### will work if picks cookies automatically
+GET {{https-host}}/{{prefix}}/{{v1}}/cats HTTP/1.1
+
+### with  session
+GET {{https-host}}/{{prefix}}/{{v1}}/cats HTTP/1.1
+Cookie: session=ORTB9MkNxiEd2jfLeXZdbdJYLHMja6S3VXAshrFWh1k

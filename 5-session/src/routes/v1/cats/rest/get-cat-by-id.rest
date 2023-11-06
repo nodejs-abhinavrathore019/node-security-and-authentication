@@ -1,0 +1,7 @@
+
+### will work if picks cookies automatically
+GET {{https-host}}/{{prefix}}/{{v1}}/cats/CvhOrd3S_ HTTP/1.1
+
+### with lib token
+GET {{https-host}}/{{prefix}}/{{v1}}/cats/CvhOrd3S_ HTTP/1.1
+Cookie: connect.sid=s%3A38YE50OpRF91dvzyTuII2DonpoWO1I87.cDvLA2Q6vzfuIxa%2FF6xSvHTru6An2%2Bf8CvtAtN7FCtE

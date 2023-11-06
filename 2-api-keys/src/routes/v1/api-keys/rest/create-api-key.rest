@@ -1,0 +1,24 @@
+
+### create api key 1
+POST {{http-host}}/{{prefix}}/{{v1}}/api-keys HTTP/1.1
+content-type: application/json
+
+{
+    "name": "api-1"
+}
+
+### create api key 2
+POST {{http-host}}/{{prefix}}/{{v1}}/api-keys HTTP/1.1
+content-type: application/json
+
+{
+    "name": "api-2"
+}
+
+### create api key 3
+POST {{http-host}}/{{prefix}}/{{v1}}/api-keys HTTP/1.1
+content-type: application/json
+
+{
+    "name": "api-3"
+}

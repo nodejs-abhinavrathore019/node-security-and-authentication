@@ -1,0 +1,22 @@
+
+### refresh token missing
+POST {{http-host}}/{{prefix}}/{{v1}}/auth/refresh_token HTTP/1.1
+content-type: application/json 
+
+### non existing refresh token 
+POST {{http-host}}/{{prefix}}/{{v1}}/auth/refresh_token HTTP/1.1
+content-type: application/json
+Cookie: refreshToken=NOzvCecbDTkm48rRMV7LAFhABWkB4w43ZkrqnluBOi8
+
+
+### refresh token for custom token
+POST {{http-host}}/{{prefix}}/{{v1}}/auth/refresh_token HTTP/1.1
+content-type: application/json
+Cookie: refreshToken=gw3l4s6GA-SPDGKhNwfvw7nfOBKHuMYLEr8LK6u6ljA
+
+
+### refresh token for lib token
+POST {{http-host}}/{{prefix}}/{{v1}}/auth/refresh_token HTTP/1.1
+content-type: application/json
+Cookie: refreshToken=1jJOtnI7DnFBaUfsX8WaATwQ77kONTq6A_kL9J7UpXk
+

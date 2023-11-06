@@ -1,0 +1,4 @@
+
+### will work if picks cookies automatically
+
+GET {{https-host}}/{{prefix}}/{{v1}}/cats HTTP/1.1
